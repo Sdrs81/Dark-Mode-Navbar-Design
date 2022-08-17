@@ -1,0 +1,70 @@
+
+/* Adjustments for all page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* For responsive design, I set default value for font size */
+html{
+    font-size: 10px;
+}
+
+/* Fix for visual errors */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Uppercase structure for words */
+.textUppercase{
+    text-transform: uppercase;
+}
+
+/* All 'a' tag common attributes */
+a{
+    text-decoration: none;
+}
+
+/* General adjustments for navbar  */
+.navbarContainer{
+    width: 100%;
+    height: auto;
+    background-color:black;
+    padding: 2rem;    
+    float: left;
+}
+
+/* logoName component of Navbar */
+.logoName{
+    font-size: 3rem;
+    color: #0000EE;
+    font-weight: 700;
+}
+
+/* menus component of Navbar */
+.menus{
+    float: right;
+}
+
+/* Items in the navbar where are at right */
+.menus .menuItem{
+    float: left;
+}
+
+/* General adjustments for menu items */
+ul {
+    list-style-type: none;
+}
+
+/* Adjustments for link that are in menu */
+.menus .itemLink{
+    color: #0000EE;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+}
