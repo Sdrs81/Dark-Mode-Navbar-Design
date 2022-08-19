@@ -40,6 +40,28 @@ nav {
     top: 0;
 }
 
+/* Adjustments for 750px and below */
+@media screen and (max-width:750px){
+    html{
+        font-size: 8px;
+    }
+}
+
+/* Adjustments for 600px and below */
+@media screen and (max-width:600px){
+    html{
+        font-size: 6px;
+    }
+}
+
+/* Adjustments for 450px and below */
+@media screen and (max-width:450px){
+    html{
+        font-size: 5px;
+    }
+}
+
+
 /* logoName component of Navbar */
 .logoName {
     float: left;
@@ -104,7 +126,7 @@ ul {
     display: none;
     position: absolute;
     background-color: #343535;
-    min-width: 125px;
+    min-width: 12.5rem;
     z-index: 1;
 
     font-size: 1.4rem;
