@@ -1,3 +1,3 @@
-# Dark-Mode-Navbar-Design
+# Dark-Mode-Navbar-Design-And-Slider
 
-Responsive Navbar design for dark mode
+Responsive Navbar design for dark mode and slider.
