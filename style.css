@@ -71,6 +71,7 @@ nav {
 /* Items in the navbar where are at right */
 .menus .menuItem {
     float: left;
+    width: fit-content;
 }
 
 /* General adjustments for menu items */
@@ -108,7 +109,7 @@ ul {
     position: absolute;
     background-color: #343535;
     min-width: 12.5rem;
-    z-index: 1;
+    z-index: 500;
 
     font-size: 1.4rem;
     border: 2px solid black;
@@ -116,8 +117,8 @@ ul {
 }
 
 /* DropDown menus with active option */
-.menuItem:focus-within .dropDownMenu {
-    display: block;
+.menuItem:hover .dropDownMenu {
+    display:block;
 }
 
 /* dropDownMenu menus attributes */
@@ -156,8 +157,10 @@ ul {
     display: none;
 }
 
+/* images adjustments for slider */
 .mySlides img {
     width: 50%;
+    max-width: 800px;
     height: 45rem;
     border: 5px solid black;
     border-radius: 25px;
@@ -219,23 +222,28 @@ ul {
     background-color: #D9643A;
 }
 
+/* menu button invisible up to resolution */
+.menus .menu-icon {
+    display: none;
+}
+
 /* Responsive Breakpoints */
 
-/* Adjustments for 750px and below */
-@media screen and (max-width:1000px) {
+/* Adjustments for 1200px and below */
+@media screen and (min-width:926px) {
     html {
         font-size: 10px;
     }
 }
 
-/* Adjustments for 850px and below */
+/* Adjustments for 925px and below */
 @media screen and (max-width:925px) {
     html {
         font-size: 9px;
     }
 }
 
-/* Adjustments for 750px and below */
+/* Adjustments for 850px and below */
 @media screen and (max-width:850px) {
     html {
         font-size: 8px;
@@ -253,6 +261,40 @@ ul {
 @media screen and (max-width:650px) {
     html {
         font-size: 6px;
+    }
+
+    .logoName {
+        float: none;
+        text-align: left;
+        padding-bottom: 0.5rem;
+    }
+
+    .menus {
+        float: none;
+    }
+
+    .menus .itemLink {
+        padding-left: 0;
+    }
+
+    .menus .menuItem {
+        float: none;
+        text-align: left;
+        padding-top: 0;
+        padding-left: 0;
+        padding: 1rem;
+    }
+
+    .menus .menu-icon {
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        right: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .menus.responsive li:not(:first-child) {
+        display: none;
     }
 }
 
