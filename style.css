@@ -118,7 +118,7 @@ ul {
 
 /* DropDown menus with active option */
 .menuItem:hover .dropDownMenu {
-    display:block;
+    display: block;
 }
 
 /* dropDownMenu menus attributes */
@@ -229,7 +229,7 @@ ul {
 
 /* Responsive Breakpoints */
 
-/* Adjustments for 1200px and below */
+/* Adjustments for 926px and above */
 @media screen and (min-width:926px) {
     html {
         font-size: 10px;
@@ -257,7 +257,7 @@ ul {
     }
 }
 
-/* Adjustments for 600px and below */
+/* Adjustments for 650px and below */
 @media screen and (max-width:650px) {
     html {
         font-size: 6px;
@@ -298,7 +298,7 @@ ul {
     }
 }
 
-/* Adjustments for 450px and below */
+/* Adjustments for 500px and below */
 @media screen and (max-width:500px) {
     html {
         font-size: 5px;
